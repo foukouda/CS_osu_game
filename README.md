@@ -1,36 +1,42 @@
-# osu! Data Collection Game
+# Data Analyser and OSU Python Script
 
-## Description du projet
+## Overview
+This repository contains two main components:
 
-Ce projet a pour objectif de créer un petit jeu inspiré de *osu!*, un jeu rythmique populaire. L'objectif principal de ce projet n'est pas uniquement de recréer l'expérience de jeu mais aussi d'apprendre à récupérer des données utilisateur afin de les utiliser dans des études de cas et d'analyser le comportement des joueurs. Cela permettra de développer des compétences en collecte et en analyse de données tout en créant une application ludique.
+1. **OSU Python Script (`osu.py`)**: A script that appears to interact with or process OSU game-related data.
+2. **Data Analyser Notebook (`data_analyser.ipynb`)**: A Jupyter Notebook for analyzing datasets, likely focused on the results stored in the CSV file.
+3. **Game Results Data (`game_results.csv`)**: A CSV file containing game-related data for analysis.
 
-## Fonctionnalités
+## Features
+- **Python Script (`osu.py`)**:
+  - Handles specific operations related to OSU or gaming data.
+  - Customizable and extendable for additional features.
+- **Jupyter Notebook (`data_analyser.ipynb`)**:
+  - Allows data exploration and visualization.
+  - Ideal for understanding trends and patterns in game data.
+- **CSV Data (`game_results.csv`)**:
+  - Provides structured data for analysis.
+  - Can be modified or replaced with other datasets.
 
-- Reproduction simplifiée des mécaniques de *osu!* : suivre le rythme de la musique en cliquant sur des cercles.
-- Suivi des interactions utilisateur : temps de réponse, précision des clics, rythme, etc.
-- Export des données en vue de leur analyse (format CSV, JSON).
-- Interface utilisateur intuitive pour faciliter la navigation.
+## Requirements
+Make sure you have the following installed:
+- Python 3.8 or later
+- Required Python packages (install using `requirements.txt`):
+  ```bash
+  pip install -r requirements.txt
 
-## Objectifs pédagogiques
+git clone https://github.com/username/repository-name.git
+cd repository-name
+pip install -r requirements.txt
 
-1. **Apprendre la collecte de données utilisateur** : Comprendre les bonnes pratiques et les méthodes pour collecter des données en respectant la confidentialité et les lois en vigueur.
-2. **Analyser les données de jeu** : Explorer les données des joueurs, comme les temps de réaction, pour identifier des schémas ou des tendances intéressantes.
-3. **Améliorer les compétences en développement Python** : Créer une application interactive avec Python en intégrant des fonctionnalités d'interface utilisateur et de collecte de données.
 
-## Structure du projet
+python osu.py
+jupyter notebook data_analyser.ipynb
 
-- **osu.py** : Script principal du jeu, implémentant la logique du jeu *osu!* simplifié.
-- **data/** : Répertoire où les données collectées sont stockées pour une analyse ultérieure.
-- **README.md** : Documentation du projet (ce fichier).
-
-## Prérequis
-
-- Python 3.x
-- Bibliothèques requises (voir `requirements.txt`)
-
-## Installation
-
-1. Clonez le dépôt Git :
-   ```bash
-   git clone https://github.com/votre_utilisateur/votre_projet.git
-   cd votre_projet
+repository-name/
+│
+├── osu.py                  # Python script for game-related processing
+├── data_analyser.ipynb     # Jupyter Notebook for data analysis
+├── game_results.csv        # CSV file with game data
+├── README.md               # Project documentation
+└── requirements.txt        # Python dependencies
